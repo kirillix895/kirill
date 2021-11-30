@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {findIndex} from "rxjs";
 
 @Component({
   selector: 'app-root',
@@ -6,9 +7,26 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'ng-basis';
-  message:string = '';
+ qwe =[{
+
+  firstName:'Ivan',
+    LastName:'Petrovich',
+    age:24,}
+  , {
+     firstName: 'alexandr',
+     LastName: 'Lukashenko',
+     age: 67
+   },
+   {
+  firstName: 'vladimir',
+      LastName: 'Putin',
+      age: 69
+}
+
+
+
+]
   go(){
-    this.message = 'kyky'
+this.qwe.shift()
   }
 }

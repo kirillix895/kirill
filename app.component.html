@@ -1,7 +1,10 @@
+<h1>This is my project</h1>
+<ul   *ngFor="let item of qwe;let i = index;let count = count;let isFirst = first;">
+  <li >
+   {{i+1}}/{{count}}:Name -{{item.firstName}}; LastName - {{item.LastName}};Age - {{item.age}}
+  </li>
 
-<div class="conteiner" id="qwe"><h3>want to learn javascript?</h3>
-<button (click)="go()" >click this!!!</button>
-</div>
-<div>
-{{message}}
-</div>
+
+
+</ul>
+<button (click)="go()">delete first element</button>
